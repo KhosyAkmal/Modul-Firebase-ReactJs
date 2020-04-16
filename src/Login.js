@@ -1,13 +1,13 @@
-import React, {userState, userContext} from "react";
+import React, {useState, useContext} from "react";
 import { AuthContext } from "./index";
 import * as firebase from "firebase"
 
 const Login = () => {
-    const [email, setEmail] = userState("");
-    const [password, setPassword] = userState("");
-    const [error, setErrors] = userState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [error, setErrors] = useState("");
 
-    const Auth = userContext(AuthContext);
+    const Auth = useContext(AuthContext);
     const handleForm = e => {
         e.preventDefault();
         firebase
@@ -42,7 +42,7 @@ const Login = () => {
                 <hr />
                 <button class="googleBtn" type="button">
                     <img
-                        src="https://upload.wikimedia.org/wikipedia/commonst/5/53/Google_%22G%22_Logo.svg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
                         alt="logo"
                     />
                     Login With Google
