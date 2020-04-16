@@ -1,3 +1,5 @@
+# Khosy Akmal - 1741720021 - TI 3A / 17
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
